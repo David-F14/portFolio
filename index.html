@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Mon portfolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <!-- Hero Banner -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container text-center">
-      <h1 class="display-4">Bienvenue sur mon portfolio</h1>
-      <p class="lead">Je suis un développeur Java/Spring Boot passionné par l'architecture et la résolution de problèmes.</p>
-      <hr class="my-4">
-      <p>Cliquez sur le bouton ci-dessous pour regarder une vidéo YouTube aléatoire!</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" role="button">Regarder une vidéo</a>
-      </p>
-    </div>
-  </div>
 
-  <!-- Blocs de textes illustrés par des images -->
-  <div class="container">
-    <section id="apropos">
-      <h2>À propos</h2>
-      <p>Ici, vous pouvez inclure une brève description de vous-même, de votre expérience en programmation et de vos compétences. Vous pouvez également inclure des liens vers vos comptes de réseaux sociaux et d'autres informations pertinentes.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta charset="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#" style="--i:1;" class="active">Home</a>
+            <a href="#" style="--i:2;">About</a>
+            <a href="#" style="--i:3;">Skills</a>
+            <a href="#" style="--i:4;">Portfolio</a>
+            <a href="#" style="--i:5;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hell, It's me</h3>
+            <h1>David Falue</h1>
+            <h3>And i'm a <span class="multiple-text"></span> Developer</h3>
+            <p>lorem ipsum dzadazdzazd
+                dazdzaazdadaz
+                dazdaz
+            </p>
+            <div class="social-media">
+                <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-github'></i></a>                
+            </div>
+            <a href="" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="me.png" alt="me">
+        </div>
     </section>
 
-    <div class="row">
-      <div class="image-container col-sm-4">
-        <img src="./img/dev_1.jpg" alt="Image 1" class="img-fluid">
-        <h2>Qualité 1</h2>
-        <p>Description de la qualité 1.</p>
-      </div>
-      <div class="image-container col-sm-4">
-        <img src="./img/dev_2.jpg" alt="Image 2" class="img-fluid">
-        <h2>Qualité 2</h2>
-        <p>Description de la qualité 2.</p>
-      </div>
-      <div class="image-container col-sm-4">
-        <img src="./img/dev_3.jpg" alt="Image 3" class="img-fluid">
-        <h2>Qualité 3</h2>
-        <p>Description de la qualité 3.</p>
-      </div>    
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
