@@ -86,7 +86,7 @@ section {
 
 .home {    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -185,14 +185,14 @@ section {
 
 .about {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--second-bg-color);
     gap: 2rem;
 }
 
 .about-img img {
-    max-width: 450px;
+    max-width: 300px;
 }
 
 .heading {
