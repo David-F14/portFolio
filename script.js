@@ -1,6 +1,6 @@
 /** Change text of Home **/
 var typed = new Typed(".multiple-text", {
-    strings: ["C# Developer", "Java Develop", "Fullstack Developer"],
+    strings: ["C# Developer", "Java Developer", "Fullstack Developer", "Laravel Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
