@@ -450,7 +450,7 @@ section {
 
 @media (max-width: 768px) {
     #menu-icon {
-        display: block;
+        display: block;        
     }
 
     .navbar {
@@ -473,6 +473,10 @@ section {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+
+    .header {
+        animation: none !important;
     }
 
     .home {

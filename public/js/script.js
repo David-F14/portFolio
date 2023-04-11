@@ -38,8 +38,8 @@ window.onscroll = () => {
 
 
     /** Sticky navbar **/
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+    /*let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);*/
 
     /** remove toggle icon and navbar when click navbar link (scroll) **/
     menuIcon.classList.remove('bx-x');
@@ -47,12 +47,15 @@ window.onscroll = () => {
 };
 
 /** scroll reveal **/
+// commentary cause is greedy
+
 ScrollReveal({ 
     reset: true,
-    distance: '80px',
+    distance: '10px',
     duration: 2000,
-    delay: 200
+    delay: 100
 });
+
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
