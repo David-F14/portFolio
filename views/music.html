@@ -12,8 +12,8 @@
 
     <div class="hero">
         <div class="music">
-            <p>Artist : NEFFEK</p>
-            <h1>NiwelTakayama</h1>
+            <p>Artist : Niwel</p>
+            <h1>Takayama</h1>
             <div class="track">
                 <img src="/img/play.png" id="playBtn">
                 <div id="waveform"></div>
@@ -27,8 +27,8 @@
 
         var wavesurfer = WaveSurfer.create({
             container: '#waveform',
-            waveColor: '#ddd',
-            progressColor: '#ff006c',
+            waveColor: '#fff',
+            progressColor: '#0ef',
             barWidth: 4,
             responsive: true,
             height: 90,
@@ -37,12 +37,16 @@
 
         wavesurfer.load('/media/NiwelTakayama.mp3');
     
-        playBtn.onclick = function(){            
+        playBtn.onclick = function(){              
             playing = !playing;
             wavesurfer.playPause();
-
             playBtn.src = playing ? playBtn.src = "/img/pause.png" : playBtn.src = "/img/play.png";    
         }
+        
+        // Autoplay
+        // wavesurfer.on('ready', () => {            
+        //     playBtn.click();
+        // });
 
         wavesurfer.on('finish', () => {
             playing = false;
