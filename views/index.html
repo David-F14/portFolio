@@ -1,208 +1,230 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta charset="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David FALUE</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
-</head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
+      <a href="#" class="logo">Portfolio.</a>      
+      <div class="music">
+        <img src="/img/play.png" id="playBtn" />
+        <div id="waveform"></div>
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Home</a>
-            <a href="#about" style="--i:2;">About</a>
-            <a href="#services" style="--i:3;">Services</a>
-            <a href="#portfolio" style="--i:4;">Portfolio</a>
-            <a href="#contact" style="--i:5;">Contact</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#services" style="--i: 3">Services</a>
+        <a href="#portfolio" style="--i: 4">Portfolio</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </nav>
     </header>
 
     <!-- Home Section -->
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's me</h3>
-            <h1>David Falue</h1>
-            <h3>And i'm a <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus natus accusamus rerum iure perferendis eaque, ad reiciendis ducimus assumenda.
-            </p>
-            <div class="social-media">
-                <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-github'></i></a>
-            </div>
-            <a href="" class="btn">Download CV</a>
+      <div class="home-content">
+        <h3>Hello, It's me</h3>
+        <h1>David Falue</h1>
+        <h3>And i'm a <span class="multiple-text"></span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+          necessitatibus natus accusamus rerum iure perferendis eaque, ad
+          reiciendis ducimus assumenda.
+        </p>
+        <div class="social-media">
+          <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+          <a href="#" style="--i: 7"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" style="--i: 8"><i class="bx bxl-github"></i></a>
         </div>
+        <a href="" class="btn">Download CV</a>
+      </div>
 
-        <div class="home-img">
-            <img src="/img/me.png" alt="me">
-        </div>
+      <div class="home-img">
+        <img src="/img/me.png" alt="me" />
+      </div>
 
-        <div id="waveform"></div>
+      <div id="waveform"></div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="/img/me_about.png" alt="">
-        </div>
+      <div class="about-img">
+        <img src="/img/me_about.png" alt="" />
+      </div>
 
-        <div class="about-content">
-            <h2 class="heading">About Me</h2>
-            <h3>Frontend Developer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique officiis sit neque a fugiat quaerat
-                doloribus laboriosam facere porro soluta!
-            </p>
-            <a href="" class="btn" id="btn-read-more">Read More</a>
-        </div>
+      <div class="about-content">
+        <h2 class="heading">About Me</h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+          officiis sit neque a fugiat quaerat doloribus laboriosam facere porro
+          soluta!
+        </p>
+        <a href="" class="btn" id="btn-read-more">Read More</a>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="services" id="services">
-        <h2 class="heading">Our Services</h2>
+      <h2 class="heading">Our Services</h2>
 
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque assumenda voluptatum
-                    unde praesentium molestiae et, eligendi quaerat atque quis quo.
-                    eligendi quaerat atque quis quo.
-                </p>
-                <a href="" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Graphics Design</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque assumenda voluptatum
-                    unde praesentium molestiae et, eligendi quaerat atque quis quo.
-                    eligendi quaerat atque quis quo.
-                </p>
-                <a href="" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque assumenda voluptatum
-                    unde praesentium molestiae et, eligendi quaerat atque quis quo.
-                    eligendi quaerat atque quis quo.
-                </p>
-                <a href="" class="btn">Read More</a>
-            </div>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            assumenda voluptatum unde praesentium molestiae et, eligendi quaerat
+            atque quis quo. eligendi quaerat atque quis quo.
+          </p>
+          <a href="" class="btn">Read More</a>
         </div>
+
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphics Design</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            assumenda voluptatum unde praesentium molestiae et, eligendi quaerat
+            atque quis quo. eligendi quaerat atque quis quo.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Digital Marketing</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            assumenda voluptatum unde praesentium molestiae et, eligendi quaerat
+            atque quis quo. eligendi quaerat atque quis quo.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="/img/Portable.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nesciunt!                        
-                    </p>
-                    <a href=""><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="/img/Programming.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nesciunt!                        
-                    </p>
-                    <a href=""><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="/img/Coding.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nesciunt!                        
-                    </p>
-                    <a href=""><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="/img/Android.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nesciunt!                        
-                    </p>
-                    <a href=""><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="/img/Shutdown.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nesciunt!                        
-                    </p>
-                    <a href=""><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="/img/Joker.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nesciunt!                        
-                    </p>
-                    <a href=""><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+      <h2 class="heading">Latest <span>Project</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="/img/Portable.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nesciunt!
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
         </div>
+        <div class="portfolio-box">
+          <img src="/img/Programming.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nesciunt!
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="/img/Coding.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nesciunt!
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="/img/Android.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nesciunt!
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="/img/Shutdown.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nesciunt!
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="/img/Joker.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nesciunt!
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact Me !</h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Adress">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+      <h2 class="heading">Contact Me !</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Adress" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by David Falue | All Rights Reserved.</p>
-        </div>
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by David Falue | All Rights Reserved.</p>
+      </div>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
-    
+
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>        
-    <script src="https://unpkg.com/wavesurfer.js@4.2.0/dist/wavesurfer.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js@6.6.3/dist/wavesurfer.js"></script>
     <script src="/js/script.js"></script>
-    <script>
-        var wavesurfer = WaveSurfer.create({
-            container: '#waveform',
-            waveColor: 'violet',
-            progressColor: 'purple'
-        });
-
-        wavesurfer.load('/music/NiwelTakayama.mp3');
-    </script>
-</body>
-
+    <script src="/js/music.js"></script>
+  </body>
 </html>

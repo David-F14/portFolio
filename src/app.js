@@ -1,20 +1,20 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
+const path = require("path");
 
-const publicDirectoryPath = path.join(__dirname, '../public');
-const viewsDirectoryPath = path.join(__dirname, '../views');
+const publicDirectoryPath = path.join(__dirname, "../public");
+const viewsDirectoryPath = path.join(__dirname, "../views");
 
 app.use(express.static(publicDirectoryPath));
 
-app.get('/', (req, res) => {
-  res.sendFile(viewsDirectoryPath + '/index.html');
+app.get("/", (req, res) => {
+  res.sendFile(viewsDirectoryPath + "/index.html");
 });
 
-app.get('/music', (req, res) => {
-  res.sendFile(viewsDirectoryPath + '/music.html');
+app.get("/music", (req, res) => {
+  res.sendFile(viewsDirectoryPath + "/music.html");
 });
 
-app.listen(3000,  () => {
-  console.log('Le serveur web est en cours d\'exécution sur le port 3000!');
+app.listen(3000, () => {
+  console.log("Le serveur web est en cours d'exécution sur le port 3000!");
 });
