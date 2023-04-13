@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.sendFile(viewsDirectoryPath + '/index.html');
 });
 
+app.get('/music', (req, res) => {
+  res.sendFile(viewsDirectoryPath + '/music.html');
+});
+
 app.listen(3000,  () => {
   console.log('Le serveur web est en cours d\'exécution sur le port 3000!');
 });

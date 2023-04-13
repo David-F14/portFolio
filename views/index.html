@@ -6,8 +6,8 @@
     <meta charset="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David FALUE</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
 </head>
 
 <body>
@@ -44,6 +44,8 @@
         <div class="home-img">
             <img src="/img/me.png" alt="me">
         </div>
+
+        <div id="waveform"></div>
     </section>
 
     <!-- About Section -->
@@ -189,8 +191,18 @@
     </footer>
     
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>        
+    <script src="https://unpkg.com/wavesurfer.js@4.2.0/dist/wavesurfer.js"></script>
     <script src="/js/script.js"></script>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'violet',
+            progressColor: 'purple'
+        });
+
+        wavesurfer.load('/music/NiwelTakayama.mp3');
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music wave on website</title>
+    <link rel="stylesheet" href="/css/music.css"> 
+    <script src="https://unpkg.com/wavesurfer.js@6.6.3/dist/wavesurfer.js"></script>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="music">
+            <p>Artist : NEFFEK</p>
+            <h1>NiwelTakayama</h1>
+            <div class="track">
+                <img src="/img/play.png" id="playBtn">
+                <div id="waveform"></div>
+            </div>
+        </div>
+    </div>
+            
+    <script>
+        let playing = false;
+        var playBtn = document.getElementById("playBtn");
+
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: '#ddd',
+            progressColor: '#ff006c',
+            barWidth: 4,
+            responsive: true,
+            height: 90,
+            barRadius: 4
+        });
+
+        wavesurfer.load('/media/NiwelTakayama.mp3');
+    
+        playBtn.onclick = function(){            
+            playing = !playing;
+            wavesurfer.playPause();
+
+            playBtn.src = playing ? playBtn.src = "/img/pause.png" : playBtn.src = "/img/play.png";    
+        }
+
+        wavesurfer.on('finish', () => {
+            playing = false;
+            playBtn.src = playBtn.src = "/img/play.png";    
+        });
+    </script>
+</body>
+
+</html>
